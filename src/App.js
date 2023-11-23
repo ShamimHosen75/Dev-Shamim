@@ -28,7 +28,8 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Router>
        <Navbar>
-        <Body>
+       </Navbar>
+       <Body>
           <Hero></Hero>
             <Wrapper>
              <Skills></Skills>
@@ -38,7 +39,6 @@ function App() {
              <Contact></Contact>
             </Wrapper>
         </Body>
-       </Navbar>
       </Router>   
     </ThemeProvider>
   );

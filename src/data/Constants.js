@@ -8,7 +8,7 @@ export const Bio = {
   description:
     "I'm an enthusiastic programmer working on web application development for more than 2 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am ready to make a meaningful contribution and achieve great things.",
   resume:
-    "https://drive.google.com/file/d/1BoKNRKd3iNXC_r4bQ41JR-u5R50fg4Bn/view?usp=sharing",
+    "https://drive.google.com/file/d/17uq_FmCIn-tdxUsLdprx8Tr9Uq-N_E7r/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
   facebook: "https://www.facebook.com/billal.hosen.shamim96",
 };

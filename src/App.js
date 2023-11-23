@@ -1,3 +1,4 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
 import './App.css';
 import Contact from './components/Contact/Contact';
@@ -25,7 +26,8 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Navbar>
+      <Router>
+       <Navbar>
         <Body>
           <Hero></Hero>
             <Wrapper>
@@ -36,8 +38,8 @@ function App() {
              <Contact></Contact>
             </Wrapper>
         </Body>
-      </Navbar>
-      
+       </Navbar>
+      </Router>   
     </ThemeProvider>
   );
 }

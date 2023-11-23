@@ -68,8 +68,6 @@ export const MobileMenu = styled.div`
 
 `
 
-
-
 export const MobileMenuLink = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
@@ -189,7 +187,7 @@ const theme = useTheme();
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href='#about'>Home</NavLink>
+          <NavLink href='#about'>About</NavLink>
           <NavLink href='#Skills'>Skills</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>

@@ -168,7 +168,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://i.ibb.co/0m62FMV/1.png",
+    img: "https://i.ibb.co/8bm4crr/bd-Calling.jpg",
     role: "Web Developer - Full time",
     company: "bdCalling IT LTD",
     date: "Sep 2023 - Nov 2023",

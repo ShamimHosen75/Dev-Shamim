@@ -33,9 +33,9 @@ function App() {
           <Hero></Hero>
             <Wrapper>
              <Skills></Skills>
+             <Experience></Experience>
              <Portfolio></Portfolio>
              <Education></Education>
-             <Experience></Experience>
              <Contact></Contact>
             </Wrapper>
         </Body>

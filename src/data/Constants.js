@@ -182,13 +182,13 @@ export const experiences = [
       "CSS",
       "JavaScript",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   }, 
   {
     id: 1,
     img: "https://i.ibb.co/0m62FMV/1.png",
     role: "Frontend Engineer - Intern",
-    company: "App Coderz",
+    company: "App Coderz, USA",
     date: "Dec 2022 - May 2023",
     desc: "Working on the frontend of the web application using MERN Stach technology and also working on CMS projects in WordPress",
     skills: [
@@ -202,7 +202,7 @@ export const experiences = [
       "HTML",
       "CSS",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   }, 
 ];
 
@@ -474,9 +474,7 @@ export const projects = [
     ],
     category: "CMS",
     Weblink: "https://eclecticmindstherapy.com/",
-  },
-
-   
+  }, 
   
 ];
 

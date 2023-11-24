@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { skills } from '../../data/Constants'
 
-// Styles Started Here
+// Style Started Here
 
 // Style of Container
 const Container = styled.div`
@@ -128,7 +128,6 @@ const SkillImage = styled.img`
   height: 24px;
 `
 // Styles Ended Here
-
 
 const Skills = () => {
   return (

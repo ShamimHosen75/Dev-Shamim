@@ -58,11 +58,11 @@ export const skills = [
         image:
           "https://i.ibb.co/sCPyDKY/vuejs.png",
       },
-      {
-        name: "TypeScript",
-        image:
-          "https://i.ibb.co/xLWWTCf/typescript.png",
-      },
+      // {
+      //   name: "TypeScript",
+      //   image:
+      //     "https://i.ibb.co/xLWWTCf/typescript.png",
+      // },
     ],
   },
   {
@@ -90,26 +90,16 @@ export const skills = [
   },
   {
     title: "CP & CMS",
-    skills: [
-      {
-        name: "C++",
-        image:
-          "https://i.ibb.co/mhG77hz/c.png",
-      },
+    skills: [ 
       {
         name: "C",
         image:
           "https://i.ibb.co/Vm7PgLg/c.png",
       },
       {
-        name: "LeetCode",
+        name: "C++",
         image:
-          "https://i.ibb.co/qBQjRGj/leetcode.png",
-      },
-      {
-        name: "HackerRank",
-        image:
-          "https://i.ibb.co/0V4L8nH/hackerrank.png",
+          "https://i.ibb.co/mhG77hz/c.png",
       },
       {
         name: "WordPress",
@@ -125,6 +115,16 @@ export const skills = [
         name: "Yoast SEO",
         image:
           "https://i.ibb.co/x2cHRFg/yoast.png",
+      },
+      {
+        name: "LeetCode",
+        image:
+          "https://i.ibb.co/qBQjRGj/leetcode.png",
+      },
+      {
+        name: "HackerRank",
+        image:
+          "https://i.ibb.co/0V4L8nH/hackerrank.png",
       },
     ],
   },

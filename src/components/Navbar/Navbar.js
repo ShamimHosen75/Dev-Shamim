@@ -176,7 +176,7 @@ const theme = useTheme();
             cursor: "pointer",
           }}
           >
-            <SiSongoda size="3rem" /> <Span>Shamim-Devs</Span>
+            <SiSongoda size="3rem" /> <Span>Dev | Shamim</Span>
           </a>
         </NavLogo>
         <MobileIcon>
@@ -215,11 +215,14 @@ const theme = useTheme();
               setIsOpen(!isOpen)
             }}>Education</MobileMenuLink>
             <GithubButton 
+            onClick={() => {
+              setIsOpen(!isOpen)
+            }}
             style={{
               padding: '10px 16px',background: `${theme.primary}`, 
               color: 'white',
               width: 'max-content'}} 
-              href={"/"} target="_blank">Github Profile</GithubButton>
+              href={"https://github.com/ShamimHosen75"} target="display">Github Profile</GithubButton>
           </MobileMenu>
         }
       </NavContainer>

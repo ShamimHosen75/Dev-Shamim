@@ -2,13 +2,15 @@ export const Bio = {
   name: "Billal Hosen Shamim",
   roles: [
     "A Competitive Programmer",
-    "Software Developer",
+    "Frontend Developer",
+    "React JS Developer",
+    "MERN Stack Developer",
     "WordPress Developer",
   ],
   description:
-    "I'm an enthusiastic programmer working on web application development for more than 2 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skill is based on JavaScript and I love to do most of the things using JavaScript.",
+    "I'm an enthusiastic programmer working on web application development for more than 2 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skills are based on JavaScript, React JS, and WordPress I love to do most things.",
   resume:
-    "https://drive.google.com/file/d/17uq_FmCIn-tdxUsLdprx8Tr9Uq-N_E7r/view?usp=sharing",
+    "https://drive.google.com/file/d/1EaD_pbER4dmxTnsXJinh6L12vnHeyEM4/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
   facebook: "https://www.facebook.com/billal.hosen.shamim96",
 };

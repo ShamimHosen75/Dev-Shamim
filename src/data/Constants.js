@@ -2,10 +2,10 @@ export const Bio = {
   name: "Billal Hosen Shamim",
   roles: [
     "A Competitive Programmer",
-    "Frontend Developer",
-    "React JS Developer",
-    "MERN Stack Developer",
-    "WordPress Developer",
+    "A Frontend Developer",
+    "A React JS Developer",
+    "A MERN Stack Developer",
+    "A WordPress Developer",
   ],
   description:
     "I'm an enthusiastic programmer working on web application development for more than 2 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skills are based on JavaScript, React JS, and WordPress I love to do most things.",
@@ -407,7 +407,7 @@ export const projects = [
     title: "Film Maker Life",
     date: "Sep 2023 - Oct 2023",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
     image:
       "https://i.ibb.co/YLvTs43/project-6.png",
     tags: [
@@ -425,7 +425,7 @@ export const projects = [
     title: "Pharma X",
     date: "Oct 2023 - Nov 2023",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a WordPress custom website using page builder. This website is a online pharmacy shop and getting prescription PDF received by users. This website provides online medicine shop, prescription and informations services.",
     image:
       "https://i.ibb.co/YLvTs43/project-6.png",
     tags: [
@@ -444,7 +444,7 @@ export const projects = [
     title: "Thorema IT",
     date: "Oct 2023 - Nov 2023",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
     image:
       "https://i.ibb.co/YLvTs43/project-6.png",
     tags: [

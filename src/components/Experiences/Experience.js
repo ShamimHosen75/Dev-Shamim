@@ -72,33 +72,31 @@ const TimelineSection = styled.div`
 `;
 
 
-
 const Experience = () => {
     return (
-        <Container id="experience">
-            <Wrapper>
-                <Title>Experience</Title>
-                <Desc>
-                Here are some of the skills that I have been working on in the technology field for the last 2 years.
-                </Desc>
-                <TimelineSection>
-                    <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience}/>
-                                </TimelineContent>
-                            </TimelineItem>
-                        ))}
-                    </Timeline>
-
-                </TimelineSection>
-            </Wrapper>
-        </Container>
+    <Container id="experience">
+      <Wrapper>
+        <Title>Experience</Title>
+        <Desc>
+          Here are some of the skills that I have been working on in the technology field for the last 2 years.
+        </Desc>
+        <TimelineSection>
+            <Timeline>
+              {experiences.map((experience,index) => (
+                <TimelineItem>
+                  <TimelineSeparator>
+                      <TimelineDot variant="outlined" color="secondary" />
+                      {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: '12px', px: 2 }}>
+                      <ExperienceCard experience={experience}/>
+                  </TimelineContent>
+                </TimelineItem>
+              ))}
+            </Timeline>
+        </TimelineSection>
+      </Wrapper>
+    </Container>
     )
 }
 

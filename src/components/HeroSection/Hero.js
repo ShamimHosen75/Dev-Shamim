@@ -166,7 +166,7 @@ const Span = styled.span`
 
 //Style of Sub Title
 const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};

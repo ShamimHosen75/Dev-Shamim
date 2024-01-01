@@ -6,7 +6,7 @@ import styled, { useTheme } from 'styled-components';
 
 export const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +133,7 @@ export const GithubButton = styled.a`
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;

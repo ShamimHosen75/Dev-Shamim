@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectsStyles = () => {
+const ProjectStyles = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const ProjectsStyles = () => {
   );
 };
 
-export default ProjectsStyles;
+export default ProjectStyles;

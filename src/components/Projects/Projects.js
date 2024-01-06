@@ -17,14 +17,28 @@ const Projects = () => {
         {toggle === 'all' ?
             <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
             :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+            <ToggleButton value="all" onClick={() => setToggle('all')}>
+              All
+            </ToggleButton>
           }
           <Divider />
-          <ToggleButton>WEB APP'S</ToggleButton>
+          {toggle === 'web app' ?
+            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+            :
+            <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+          }
           <Divider />
-          <ToggleButton>CMS</ToggleButton>
+          {toggle === 'cms' ?
+            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WORDPRESS</ToggleButton>
+            :
+            <ToggleButton value="web app" onClick={() => setToggle('web app')}>WORDPRESS</ToggleButton>
+          }
           <Divider />
-          <ToggleButton>TEAM PROJECTS</ToggleButton>
+          {toggle === 'team projects' ?
+            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>TEAM PROJECTS</ToggleButton>
+            :
+            <ToggleButton value="web app" onClick={() => setToggle('web app')}>TEAM PROJECTS</ToggleButton>
+          }
           <Divider />
         </ToggleButtonGroup>
       </Wrapper>

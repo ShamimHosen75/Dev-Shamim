@@ -247,7 +247,7 @@ export const projects = [
       "HTML 5",
       "CSS 3",
   ],
-    category: "Web App",
+    category: "team projects",
     github: "https://github.com/arshadsa/save-life-hospital-management-client",
     webapp: "https://hospital-management-syst-79467.web.app/",
     member: [

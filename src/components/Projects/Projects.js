@@ -1,4 +1,4 @@
-import { Container, ToggleButton } from '@mui/material';
+import { Container, Divider, ToggleButton } from '@mui/material';
 import React from 'react';
 import { Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
 
@@ -13,7 +13,14 @@ const Projects = () => {
         </Desc>
 
         <ToggleButtonGroup>
-          <ToggleButton>Web</ToggleButton>
+          <ToggleButton>ALL</ToggleButton>
+          <Divider />
+          <ToggleButton>WEB APP'S</ToggleButton>
+          <Divider />
+          <ToggleButton>CMS</ToggleButton>
+          <Divider />
+          <ToggleButton>TEAM PROJECTS</ToggleButton>
+          <Divider />
         </ToggleButtonGroup>
       </Wrapper>
     </Container>

@@ -1,9 +1,10 @@
 import { Container, Divider, ToggleButton } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import { Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
 
 
 const Projects = () => {
+  const [toggle, setToggle] = useState('all');
   return (
     <Container id="projects">
       <Wrapper>
@@ -13,7 +14,11 @@ const Projects = () => {
         </Desc>
 
         <ToggleButtonGroup>
-          <ToggleButton>ALL</ToggleButton>
+        {toggle === 'all' ?
+            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+            :
+            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+          }
           <Divider />
           <ToggleButton>WEB APP'S</ToggleButton>
           <Divider />

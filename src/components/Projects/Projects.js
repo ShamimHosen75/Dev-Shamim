@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container, ToggleButton } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -62,6 +62,10 @@ const Projects = () => {
         <Desc>
           I have worked on a wide range of projects. From CMS to Web Apps. Here are some of my projects.
         </Desc>
+
+        <ToggleGroup>
+          <ToggleButton>Web</ToggleButton>
+        </ToggleGroup>
       </Wrapper>
     </Container>
   );

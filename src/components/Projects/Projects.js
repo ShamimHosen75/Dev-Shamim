@@ -1,7 +1,7 @@
 import { Container, Divider, ToggleButton } from '@mui/material';
 import React, { useState } from 'react';
 import { projects } from '../../data/Constants';
-import ProjectCard from '../Cards/ProjectCard';
+import ProjectCard from '../Cards/ProjectCards';
 import { CardContainer, Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
 
 

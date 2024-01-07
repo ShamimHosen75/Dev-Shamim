@@ -1,6 +1,6 @@
 import { Container, Divider, ToggleButton } from '@mui/material';
 import React, { useState } from 'react';
-import { Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
+import { CardContainer, Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
 
 
 const Projects = () => {
@@ -41,6 +41,12 @@ const Projects = () => {
           }
           <Divider />
         </ToggleButtonGroup>
+        
+        <CardContainer>
+          <h2>Hey!</h2>
+          <h2>Hey!</h2>
+          <h2>Hey!</h2>
+        </CardContainer>
       </Wrapper>
     </Container>
   );

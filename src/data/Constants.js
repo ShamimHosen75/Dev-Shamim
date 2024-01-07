@@ -404,7 +404,7 @@ export const projects = [
     description:
       "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
     image:
-      "https://i.ibb.co/YLvTs43/project-6.png",
+      "https://i.ibb.co/GWBV0z9/project-9.png",
     tags: [
       "WordPress",
       "Elementor",
@@ -422,7 +422,7 @@ export const projects = [
     description:
       "Developed a WordPress custom website using page builder. This website is a online pharmacy shop and getting prescription PDF received by users. This website provides online medicine shop, prescription and informations services.",
     image:
-      "https://i.ibb.co/YLvTs43/project-6.png",
+      "https://i.ibb.co/j4y5tb4/project-10.png",
     tags: [
       "WordPress",
       "Elementor",
@@ -441,7 +441,7 @@ export const projects = [
     description:
       "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
     image:
-      "https://i.ibb.co/YLvTs43/project-6.png",
+      "https://i.ibb.co/Ky1jpHM/project-12.png",
     tags: [
       "WordPress",
       "Elementor",
@@ -460,7 +460,7 @@ export const projects = [
     description:
       "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
     image:
-      "https://i.ibb.co/YLvTs43/project-6.png",
+      "https://i.ibb.co/tZ6S2Jh/project-8.png",
     tags: [
       "WordPress",
       "Elementor",

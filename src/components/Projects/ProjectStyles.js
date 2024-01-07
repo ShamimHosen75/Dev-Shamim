@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -102,13 +101,3 @@ export const CardContainer = styled.div`
     //     grid-template-columns: repeat(1, 1fr);
     // }
 `;
-
-const ProjectStyles = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-};
-
-export default ProjectStyles;

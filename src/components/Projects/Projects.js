@@ -1,8 +1,7 @@
-import { Container, Divider, ToggleButton } from '@mui/material';
-import React, { useState } from 'react';
-import { projects } from '../../data/Constants';
-import ProjectCard from '../Cards/ProjectCards';
-import { CardContainer, Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
+import React, { useState } from 'react'
+import { projects } from '../../data/Constants'
+import ProjectCard from '../Cards/ProjectCards'
+import { CardContainer, Container, Desc, Divider, Title, ToggleButton, ToggleButtonGroup, Wrapper } from './ProjectStyles'
 
 
 const Projects = ({openModal,setOpenModal}) => {
@@ -10,18 +9,15 @@ const Projects = ({openModal,setOpenModal}) => {
   return (
     <Container id="projects">
       <Wrapper>
-      <Title>Projects</Title>
+        <Title>Projects</Title>
         <Desc>
-          I have worked on a wide range of projects. From CMS to Web Apps. Here are some of my projects.
+          I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
         </Desc>
-
-        <ToggleButtonGroup>
-        {toggle === 'all' ?
+        <ToggleButtonGroup >
+          {toggle === 'all' ?
             <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
             :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>
-              All
-            </ToggleButton>
+            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
           <Divider />
           {toggle === 'web app' ?
@@ -30,20 +26,18 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
           }
           <Divider />
-          {toggle === 'cms' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WORDPRESS</ToggleButton>
+          {toggle === 'wordpress' ?
+            <ToggleButton active value="wordpress" onClick={() => setToggle('wordpress')}>WORDPRESS</ToggleButton>
             :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>WORDPRESS</ToggleButton>
+            <ToggleButton value="wordpress" onClick={() => setToggle('wordpress')}>WORDPRESS</ToggleButton>
           }
           <Divider />
-          {toggle === 'team projects' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>TEAM PROJECTS</ToggleButton>
+          {toggle === 'team project' ?
+            <ToggleButton active value="team project" onClick={() => setToggle('team project')}>TEAM PROJECT</ToggleButton>
             :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>TEAM PROJECTS</ToggleButton>
+            <ToggleButton value="team project" onClick={() => setToggle('team project')}>TEAM PROJECT</ToggleButton>
           }
-          <Divider />
         </ToggleButtonGroup>
-        
         <CardContainer>
           {toggle === 'all' && projects
             .map((project) => (
@@ -57,7 +51,7 @@ const Projects = ({openModal,setOpenModal}) => {
         </CardContainer>
       </Wrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

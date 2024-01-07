@@ -1,9 +1,11 @@
 import { Container, Divider, ToggleButton } from '@mui/material';
 import React, { useState } from 'react';
+import { projects } from '../../data/Constants';
+import ProjectCard from '../Cards/ProjectCard';
 import { CardContainer, Desc, Title, ToggleButtonGroup, Wrapper } from './ProjectStyles';
 
 
-const Projects = () => {
+const Projects = ({openModal,setOpenModal}) => {
   const [toggle, setToggle] = useState('all');
   return (
     <Container id="projects">
@@ -43,9 +45,15 @@ const Projects = () => {
         </ToggleButtonGroup>
         
         <CardContainer>
-          <h2>Hey!</h2>
-          <h2>Hey!</h2>
-          <h2>Hey!</h2>
+          {toggle === 'all' && projects
+            .map((project) => (
+              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+            ))}
+          {projects
+            .filter((item) => item.category === toggle)
+            .map((project) => (
+              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+            ))}
         </CardContainer>
       </Wrapper>
     </Container>

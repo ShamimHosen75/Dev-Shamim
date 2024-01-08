@@ -470,6 +470,24 @@ export const projects = [
     category: "wordpress",
     Weblink: "https://eclecticmindstherapy.com/",
   }, 
+  //CMS Project-5(Client)
+  {
+    id: 10,
+    title: "EmpSolution",
+    date: "Dec 2023 - Jan 2024",
+    description:
+      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+    image:
+      "https://i.ibb.co/1br2dS3/project-11.png",
+    tags: [
+      "WordPress",
+      "Elementor",
+      "Plugins",
+      "CSS",
+    ],
+    category: "wordpress",
+    Weblink: "https://empsolution.com.br/",
+  }, 
   
 ];
 

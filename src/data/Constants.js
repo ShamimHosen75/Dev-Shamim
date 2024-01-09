@@ -458,7 +458,7 @@ export const projects = [
     title: "Eclectic Minds Therapy",
     date: "Oct 2023 - Nov 2023",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
     image:
       "https://i.ibb.co/tZ6S2Jh/project-8.png",
     tags: [
@@ -476,7 +476,7 @@ export const projects = [
     title: "EmpSolution",
     date: "Dec 2023 - Jan 2024",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
     image:
       "https://i.ibb.co/1br2dS3/project-11.png",
     tags: [

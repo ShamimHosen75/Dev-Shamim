@@ -6,7 +6,7 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import React from 'react';
 import styled from 'styled-components';
-import { experiences } from '../../data/Constants';
+import { experiences } from '../../data/constants';
 import ExperienceCard from '../Cards/ExperienceCard';
 
 const Container = styled.div`
@@ -82,11 +82,11 @@ const Experience = () => {
         </Desc>
         <TimelineSection>
             <Timeline>
-              {experiences.map((experience,index) => (
+              {experiences.map((experience,Experience) => (
                 <TimelineItem>
                   <TimelineSeparator>
                       <TimelineDot variant="outlined" color="secondary" />
-                      {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                      {Experience !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: '12px', px: 2 }}>
                       <ExperienceCard experience={experience}/>

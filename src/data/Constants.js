@@ -476,7 +476,7 @@ export const projects = [
     title: "EmpSolution",
     date: "Dec 2023 - Jan 2024",
     description:
-      "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of cinema. This website provides film production, creative direction and awards services.",
+      "Developed a WordPress custom website using popular page builder(Elementor). This website is a IT technical support, which seeks to provide high-quality solutions to ensure the security and privacy of customer data. This website provides a wide range of technical support services, including network configuration, software and hardware solutions, cybersecurity, backup and data recovery etc.",
     image:
       "https://i.ibb.co/1br2dS3/project-11.png",
     tags: [

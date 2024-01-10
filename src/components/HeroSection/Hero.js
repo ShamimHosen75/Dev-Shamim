@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
-import { Bio } from "../../data/Constants";
+import { Bio } from "../../data/constants";
 import HeroImg from "../../images/Shamim.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
 

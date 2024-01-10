@@ -188,10 +188,11 @@ const theme = useTheme();
         </MobileIcon>
         <NavItems>
           <NavLink href='#about'>About</NavLink>
-          <NavLink href='#Skills'>Skills</NavLink>
+          <NavLink href='#skills'>Skills</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#educations'>Education</NavLink>
+          <NavLink href='#education'>Education</NavLink>
+          <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <GithubButton>Github Profile</GithubButton>

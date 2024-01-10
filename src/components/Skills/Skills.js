@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { skills } from '../../data/Constants'
+import { skills } from '../../data/constants'
 
 // Style Started Here
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { projects } from '../../data/Constants'
+import { projects } from '../../data/constants'
 import ProjectCard from '../Cards/ProjectCards'
 import { CardContainer, Container, Desc, Divider, Title, ToggleButton, ToggleButtonGroup, Wrapper } from './ProjectStyles'
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { projects } from '../../data/constants'
-import ProjectCard from '../Cards/ProjectCards'
+import { default as ProjectCard } from '../Cards/ProjectCards'
 import { CardContainer, Container, Desc, Divider, Title, ToggleButton, ToggleButtonGroup, Wrapper } from './ProjectStyles'
 
 
@@ -54,4 +54,4 @@ const Projects = ({openModal,setOpenModal}) => {
   )
 }
 
-export default Projects
+export default Projects;

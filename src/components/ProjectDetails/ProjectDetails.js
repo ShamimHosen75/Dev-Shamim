@@ -181,7 +181,7 @@ const Button = styled.a`
 const ProjectDetails = ({ openModal, setOpenModal }) => {
     const project = openModal?.project;
     return (
-      <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
+        <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
         <Container>
         <Wrapper>
           <CloseRounded

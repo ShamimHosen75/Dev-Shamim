@@ -127,8 +127,8 @@ const ProjectCards = ({project,setOpenModal}) => {
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             <Image src={project.image}/>
             <Tags>
-                {project.tags?.map((tag, ProjectDetails) => (
-                <Tag>{tag}</Tag>
+                {project.tags?.map((tag, index) => (
+                 <Tag>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -138,7 +138,7 @@ const ProjectCards = ({project,setOpenModal}) => {
             </Details>
             <Members>
                 {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                   <Avatar src={member.img}/>
                 ))}
             </Members>
             {/* <Button>View Project</Button> */}

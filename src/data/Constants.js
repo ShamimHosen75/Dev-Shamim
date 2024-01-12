@@ -333,7 +333,7 @@ export const projects = [
     title: "Bymetal-tool-inc.",
     date: "Jun 2022 - July 2022",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a full-stack(MERN) web application that allows users to create, delete, and update products. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
     image:
       "https://i.ibb.co/9GLf7vL/project-3.png",
     tags: [
@@ -357,7 +357,7 @@ export const projects = [
     title: "Sam-Fitness",
     date: "April 2022 - May 2022",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a full-stack(MERN) web application that allows users to create, delete, and update products. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
     image:
       "https://i.ibb.co/Jykgdyd/project-5.png",
     tags: [
@@ -380,7 +380,7 @@ export const projects = [
     title: "Royal CarMax",
     date: "March 2022 - April 2022",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "Developed a full-stack(MERN) web application that allows users to create, delete, and update products. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
     image:
       "https://i.ibb.co/YLvTs43/project-6.png",
     tags: [

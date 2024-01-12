@@ -195,7 +195,7 @@ const theme = useTheme();
           <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Github Profile</GithubButton>
+          <GithubButton href={"https://github.com/ShamimHosen75"} target="display">Github Profile</GithubButton>
         </ButtonContainer>
         {
           isOpen &&

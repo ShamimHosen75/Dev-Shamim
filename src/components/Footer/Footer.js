@@ -31,6 +31,12 @@ const Logo = styled.h1`
   color: ${({ theme }) => theme.primary};
 `;
 
+const Span = styled.div`
+    padding: 0 4px;
+    font-weight: bold;
+    font-size: 22px;
+`;
+
 // const Nav = styled.nav`
 //   width: 100%;
 //   max-width: 800px;
@@ -79,7 +85,7 @@ const SocialMediaIcon = styled.a`
 
 const Copyright = styled.p`
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: ${({ theme }) => theme.soft2};
   text-align: center;
 `;
@@ -97,7 +103,7 @@ function Footer() {
             cursor: "pointer",
           }}
           >
-            <SiSongoda size="2.5rem" /> <h4> Dev | Shamim</h4>
+            <SiSongoda size="2.5rem" /> <Span> Dev | Shamim</Span>
           </a>
         </Logo>
         {/* <Nav>

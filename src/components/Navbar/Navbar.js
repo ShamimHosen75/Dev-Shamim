@@ -176,7 +176,7 @@ const theme = useTheme();
             cursor: "pointer",
           }}
           >
-            <SiSongoda size="3rem" /> <Span>Dev | Shamim</Span>
+            <SiSongoda size="3rem" /> <Span> Dev | Shamim</Span>
           </a>
         </NavLogo>
         <MobileIcon>

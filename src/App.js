@@ -1,19 +1,21 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { useState } from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from "styled-components";
 import './App.css';
-import Contact from './components/Contact/Contact';
-import Education from "./components/Education/Education";
-import Experience from './components/Experiences/Experience';
-import Hero from './components/HeroSection/Hero';
-import Navbar from './components/Navbar/Navbar';
-import Projects from "./components/Projects/Projects";
-import Skills from './components/Skills/Skills';
-import { darkTheme } from "./utilities/Themes";
+import Contact from "./components/Contact/Contact.js";
+import Education from "./components/Education/Education.js";
+import Experience from "./components/Experiences/Experience.js";
+import Footer from "./components/Footer/Footer.js";
+import HeroSection from "./components/HeroSection/Hero";
+import Navbar from "./components/Navbar/Navbar.js";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails.js";
+import Projects from "./components/Projects/Projects.js";
+import Skills from "./components/Skills/Skills.js";
+import { darkTheme, lightTheme } from './utilities/Themes.js';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
 `
 
@@ -22,24 +24,31 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
-
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  console.log(openModal)
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Router>
-       <Navbar>
-       </Navbar>
-       <Body>
-          <Hero></Hero>
-            <Wrapper>
-             <Skills></Skills>
-             <Experience></Experience>
-             <Projects></Projects>
-             <Education></Education>
-             <Contact></Contact>
-            </Wrapper>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Router >
+        <Navbar />
+        <Body>
+          <HeroSection />
+          <Wrapper>
+            <Skills />
+            <Experience />
+          </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Wrapper>
+            <Education />
+            <Contact />
+          </Wrapper>
+          <Footer />
+          {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          }
         </Body>
-      </Router>   
+      </Router>
     </ThemeProvider>
   );
 }

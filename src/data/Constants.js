@@ -13,6 +13,7 @@ export const Bio = {
     "https://drive.google.com/file/d/1EaD_pbER4dmxTnsXJinh6L12vnHeyEM4/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
   facebook: "https://www.facebook.com/billal.hosen.shamim96",
+  github: "https://github.com/ShamimHosen75",
 };
 
 export const skills = [
@@ -249,7 +250,7 @@ export const projects = [
   ],
     category: "team project",
     github: "https://github.com/arshadsa/save-life-hospital-management-client",
-    webapp: "https://hospital-management-syst-79467.web.app/",
+    liveLink: "https://hospital-management-syst-79467.web.app/",
     member: [
       {
         name: "Billal Hosen Shamim",
@@ -300,7 +301,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/ShamimHosen75/Anonymous-Feedback-Client",
-    webapp: "https://anonymous-feedback-288d2.web.app/",
+    liveLink: "https://anonymous-feedback-288d2.web.app/",
   },
 
   //Project-3(Individual)
@@ -324,7 +325,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/ShamimHosen75/iTimeco-watch-management-client",
-    webapp: "https://itimeco-watch.web.app/",
+    liveLink: "https://itimeco-watch.web.app/",
   },
 
   //Project-4(Individual)
@@ -348,7 +349,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/ShamimHosen75/Bymetal-tool-inc-client-side",
-    webapp: "https://bymetal-tool-inc.web.app/",
+    liveLink: "https://bymetal-tool-inc.web.app/",
   },
 
   //Project-5(Individual)
@@ -370,7 +371,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/ShamimHosen75/SamFitness-React-Auth",
-    webapp: "https://samfitnessc.web.app/",
+    liveLink: "https://samfitnessc.web.app/",
   },
 
 
@@ -392,7 +393,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/ShamimHosen75/Royal-Car-Max-React",
-    webapp: "https://royal-car-max.netlify.app/",
+    liveLink: "https://royal-car-max.netlify.app/",
   },
 
 
@@ -412,7 +413,7 @@ export const projects = [
       "CSS",
     ],
     category: "wordpress",
-    Weblink: "http://www.filmmakerlife.com/",
+    liveLink: "http://www.filmmakerlife.com/",
   },
    //CMS Project-2(Company)
   {
@@ -430,7 +431,7 @@ export const projects = [
       "CSS",
     ],
     category: "wordpress",
-    Weblink: "https://pharmax.uk/",
+    liveLink: "https://pharmax.uk/",
   },
 
   //CMS Project-3(Company)
@@ -449,7 +450,7 @@ export const projects = [
       "CSS",
     ],
     category: "wordpress",
-    Weblink: "https://thorema.it/",
+    liveLink: "https://thorema.it/",
   },
 
   //CMS Project-4(Company)
@@ -468,7 +469,7 @@ export const projects = [
       "CSS",
     ],
     category: "wordpress",
-    Weblink: "https://eclecticmindstherapy.com/",
+    liveLink: "https://eclecticmindstherapy.com/",
   }, 
   //CMS Project-5(Client)
   {
@@ -486,7 +487,7 @@ export const projects = [
       "CSS",
     ],
     category: "wordpress",
-    Weblink: "https://empsolution.com.br/",
+    liveLink: "https://empsolution.com.br/",
   }, 
   
 ];

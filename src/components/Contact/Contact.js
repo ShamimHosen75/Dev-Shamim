@@ -23,7 +23,7 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 max-width: 1350px;
-padding: 0px 0px 80px 0px;
+padding: 0px 0px 120px 0px;
 gap: 12px;
 @media (max-width: 960px) {
     flex-direction: column;
@@ -120,7 +120,6 @@ const ContactButton = styled.input`
 `
 
 
-
 const Contact = () => {
 
   //hooks
@@ -140,7 +139,7 @@ const Contact = () => {
   
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>

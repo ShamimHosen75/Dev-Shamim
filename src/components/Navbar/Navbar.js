@@ -215,6 +215,9 @@ const theme = useTheme();
             <MobileMenuLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileMenuLink>
+            <MobileMenuLink href='#contact' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Contact</MobileMenuLink>
             <GithubButton 
             onClick={() => {
               setIsOpen(!isOpen)

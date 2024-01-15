@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
-import HeroImg from "../../images/Dev-Shamim.png";
+import HeroImg from "../../images/billal.png";
 import HeroBgAnimation from "../HeroBgAnimation";
 
 // Style of Hero Container

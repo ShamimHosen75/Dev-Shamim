@@ -11,7 +11,7 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 50px 30px;
+  padding: 80px 20px;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }

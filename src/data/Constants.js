@@ -489,6 +489,24 @@ export const projects = [
     category: "wordpress",
     liveLink: "https://empsolution.com.br/",
   }, 
+  //CMS Project-6(Client)
+  {
+    id: 10,
+    title: "Redealeyo",
+    date: "Janu 2024 - Jan 2024",
+    description:
+      "Developed a WordPress custom website using popular page builder(Divi).This website is a IT technical support, which seeks to provide high-quality solutions to ensure the security and privacy of customer data. This website provides a wide range of technical support services, including network configuration, software and hardware solutions, cybersecurity, backup and data recovery etc.",
+    image:
+      "https://i.ibb.co/r2BxkF5/project-13.png",
+    tags: [
+      "WordPress",
+      "Divi",
+      "Plugins",
+      "CSS",
+    ],
+    category: "wordpress",
+    liveLink: "https://redealeyo.com/",
+  }, 
   
 ];
 

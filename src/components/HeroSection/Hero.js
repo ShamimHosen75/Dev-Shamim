@@ -152,7 +152,7 @@ const TextLoop = styled.div`
     text-align: center;
   }
   @media (max-width: 640px) {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 48px;
     margin-bottom: 16px;
   }
@@ -166,7 +166,7 @@ const Span = styled.span`
 
 //Style of Sub Title
 const SubTitle = styled.div`
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};

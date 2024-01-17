@@ -145,7 +145,7 @@ const TextLoop = styled.div`
   font-weight: 600;
   font-size: 32px;
   display: flex;
-  gap: 12px;
+  gap: 20px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {

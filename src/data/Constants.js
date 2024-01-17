@@ -214,7 +214,7 @@ export const education = [
     school: "Habiganj Polytechnic Institute",
     date: "Aug 2019 - June 2023",
     grade: "Not Published Yet",
-    desc: "I am currently study in Computer Science and Technology at Habiganj Polytechnic Institue, Habiganj. I have completed 8 semesters and have a CGPA of 3.60 out of 4. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    desc: "I am currently study in Computer Science and Technology at Habiganj Polytechnic Institue, Habiganj. I have completed of the Diploma in Computer Science & Engineering at Habiganj Polytechnic Institue. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
     degree: "Diploma In Engineering - Computer Science and Technology",
   },
   {

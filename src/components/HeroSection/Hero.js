@@ -143,7 +143,7 @@ line-height: 68px;
 // Style of Text Loop
 const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   display: flex;
   gap: 20px;
   color: ${({ theme }) => theme.text_primary};

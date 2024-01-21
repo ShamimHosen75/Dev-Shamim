@@ -495,7 +495,7 @@ export const projects = [
     title: "Redealeyo",
     date: "Janu 2024 - Jan 2024",
     description:
-      "Developed a WordPress custom website using popular page builder(Divi).This website is a IT technical support, which seeks to provide high-quality solutions to ensure the security and privacy of customer data. This website provides a wide range of technical support services, including network configuration, software and hardware solutions, cybersecurity, backup and data recovery etc.",
+      "Developed a WordPress custom website using popular page builder(Divi).This website is a Real Estate Investing Solutions.Redealeyo's goal is to educate people, for FREE, about the many real estate selling choices available if the need arises to sell their property quickly. We want everyone to become an in-the-know real estate owner, seller, or buyer.",
     image:
       "https://i.ibb.co/r2BxkF5/project-13.png",
     tags: [

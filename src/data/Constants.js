@@ -440,7 +440,7 @@ export const projects = [
     title: "Thorema IT",
     date: "Oct 2023 - Nov 2023",
     description:
-      "Developed a WordPress custom website using page builder. This website is a journal devoted to the serious and impassioned discussion of Italian news. This website provides random blogs articles.",
+      "Developed a WordPress custom website using page builder(Elementor). This website is a journal devoted to the serious and impassioned discussion of Italian news. This website provides random blogs articles.",
     image:
       "https://i.ibb.co/Ky1jpHM/project-12.png",
     tags: [

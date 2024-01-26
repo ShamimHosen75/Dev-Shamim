@@ -145,7 +145,7 @@ const TextLoop = styled.div`
   font-weight: 600;
   font-size: 30px;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
@@ -209,7 +209,6 @@ const ResumeButton = styled.a`
     box-shadow:  20px 20px 60px #1F2634,
     filter: brightness(1);
     }    
-
     @media (max-width: 640px) {
         padding: 12px 0;
         font-size: 18px;
@@ -219,8 +218,7 @@ const ResumeButton = styled.a`
 
 const Hero = () => {
   return (
-    <div id='about'>
-      
+    <div id='about'>    
       <HeroContainer>
         <HeroBg>
           <HeroBgAnimation></HeroBgAnimation>
@@ -246,7 +244,7 @@ const Hero = () => {
             <ResumeButton href={Bio.resume} target="display">Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
-            <Images src={HeroImg} alt="Shamim"></Images>
+            <Images src={HeroImg} alt="Shamim-Profile"></Images>
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

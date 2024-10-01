@@ -8,7 +8,7 @@ export const Bio = {
     "A WordPress Developer",
   ],
   description:
-    "I'm an enthusiastic programmer working on web application development for more than 2 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skills are based on JavaScript, React JS, and WordPress I love to do most things.",
+    "I'm an enthusiastic programmer working on web application development for more than 3 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skills are based on JavaScript, React JS, and WordPress I love to do most things.",
   resume:
     "https://drive.google.com/file/d/1EaD_pbER4dmxTnsXJinh6L12vnHeyEM4/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
@@ -169,6 +169,25 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
+    role: "Web Developer (Team Lead) - Full time",
+    company: "Ethical Den",
+    date: "Aug 2024 (Present)",
+    desc: "Working on as a team lead developer Frontend and WordPress development of the using Elementor page builder, Divi, Wpbakery and WooCommerce projects.",
+    skills: [
+      "Wordpress",
+      "Elementor",
+      "WooCommerce",
+      "WPbakery",
+      "Divi",
+      "CSS",
+      "JavaScript",
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+  },
+
+  {
+    id: 0,
     img: "https://i.ibb.co/8bm4crr/bd-Calling.jpg",
     role: "Web Developer - Full time",
     company: "bdCalling IT LTD",
@@ -185,6 +204,7 @@ export const experiences = [
     ],
     // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   }, 
+
   {
     id: 1,
     img: "https://i.ibb.co/0m62FMV/1.png",

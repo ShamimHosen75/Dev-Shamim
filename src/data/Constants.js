@@ -187,7 +187,7 @@ export const experiences = [
   },
 
   {
-    id: 0,
+    id: 1,
     img: "https://i.ibb.co/8bm4crr/bd-Calling.jpg",
     role: "Web Developer - Full time",
     company: "bdCalling IT LTD",
@@ -206,7 +206,7 @@ export const experiences = [
   }, 
 
   {
-    id: 1,
+    id: 2,
     img: "https://i.ibb.co/0m62FMV/1.png",
     role: "Frontend Engineer - Intern",
     company: "App Coderz, USA",

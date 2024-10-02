@@ -234,7 +234,7 @@ export const education = [
     school: "Habiganj Polytechnic Institute",
     date: "Aug 2019 - June 2023",
     grade: "3.59 out of 4.00",
-    desc: "I have completed of the Diploma in Computer Science & Engineering at Habiganj Polytechnic Institue. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    desc: "I have completed of the Diploma in Computer Science & Engineering at Habiganj Polytechnic Institute. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
     degree: "Diploma In Engineering - Computer Science and Technology",
   },
   {

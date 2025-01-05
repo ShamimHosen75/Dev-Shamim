@@ -172,7 +172,7 @@ export const experiences = [
     img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
     role: "Web Developer (Team Lead) - Full time",
     company: "Ethical Den",
-    date: "Aug 2024 (Present)",
+    date: "Aug 2024 - Dec 2024",
     desc: "Working on as a team lead developer Frontend and WordPress development of the using Elementor page builder, Divi, Wpbakery and WooCommerce projects.",
     skills: [
       "Wordpress",

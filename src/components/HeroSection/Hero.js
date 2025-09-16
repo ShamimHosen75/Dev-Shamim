@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";

@@ -1,25 +1,58 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dev Shamim",
+  "name": "Billal Hosen Shamim - Portfolio",
+  "description": "Portfolio of Billal Hosen Shamim - MERN Stack Developer, Competitive Programmer, and Software Engineer",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "theme_color": "#020617",
+  "background_color": "#0a0a0f",
+  "screenshots": [
+    {
+      "src": "favicon.ico",
+      "sizes": "540x720",
+      "form_factor": "narrow",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["productivity", "business"],
+  "shortcuts": [
+    {
+      "name": "View Projects",
+      "url": "#projects",
+      "icons": [{ "src": "favicon.ico", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact Me",
+      "url": "#contact",
+      "icons": [{ "src": "favicon.ico", "sizes": "192x192" }]
+    }
+  ]
 }

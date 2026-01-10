@@ -1,13 +1,15 @@
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { SiSongoda } from "react-icons/si";
 import { Bio } from '../../data/constants';
 import { smoothScrollTo } from '../../utilities/smoothScroll';
+import { useTheme } from '../../utilities/ThemeContext';
 
 const ModernNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +43,12 @@ const ModernNavbar = () => {
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? 'bg-[#020617]/95 backdrop-blur-sm border-b border-slate-800/50 shadow-lg'
-            : 'bg-transparent border-b border-transparent'
+            ? isDark
+              ? 'bg-[#020617]/95 backdrop-blur-sm border-b border-slate-800/50 shadow-lg'
+              : 'bg-white/95 backdrop-blur-sm border-b border-slate-200/50 shadow-lg'
+            : isDark
+              ? 'bg-transparent border-b border-transparent'
+              : 'bg-white/10 border-b border-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -87,13 +93,27 @@ const ModernNavbar = () => {
               </div>
             </motion.div>
 
-            {/* Resume Button */}
+            {/* Resume Button & Theme Toggle */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="hidden lg:block"
+              className="hidden lg:flex items-center gap-4"
             >
+              <button
+                onClick={toggleTheme}
+                className={`p-2.5 rounded-lg transition-all duration-300 ${
+                  isDark
+                    ? 'bg-slate-800 hover:bg-slate-700 text-yellow-400'
+                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                }`}
+              >
+                {isDark ? (
+                  <SunIcon className="h-5 w-5" />
+                ) : (
+                  <MoonIcon className="h-5 w-5" />
+                )}
+              </button>
               <a
                 href={Bio.resume}
                 target="_blank"
@@ -104,11 +124,29 @@ const ModernNavbar = () => {
               </a>
             </motion.div>
 
-            {/* Mobile menu button */}
-            <div className="lg:hidden">
+            {/* Mobile menu button & Theme Toggle */}
+            <div className="lg:hidden flex items-center gap-2">
+              <button
+                onClick={toggleTheme}
+                className={`p-2 rounded-lg transition-all duration-300 ${
+                  isDark
+                    ? 'bg-slate-800 hover:bg-slate-700 text-yellow-400'
+                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                }`}
+              >
+                {isDark ? (
+                  <SunIcon className="h-5 w-5" />
+                ) : (
+                  <MoonIcon className="h-5 w-5" />
+                )}
+              </button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white hover:text-blue-400 p-2 rounded-lg transition-colors duration-300"
+                className={`p-2 rounded-lg transition-colors duration-300 ${
+                  isDark
+                    ? 'text-white hover:text-blue-400'
+                    : 'text-slate-700 hover:text-blue-400'
+                }`}
               >
                 {isMobileMenuOpen ? (
                   <XMarkIcon className="h-6 w-6" />
@@ -128,16 +166,22 @@ const ModernNavbar = () => {
             height: isMobileMenuOpen ? 'auto' : 0,
           }}
           transition={{ duration: 0.3 }}
-          className={`lg:hidden overflow-hidden bg-[#020617]/95 backdrop-blur-sm border-t border-slate-800/50 ${
-            isMobileMenuOpen ? 'block' : 'hidden'
-          }`}
+          className={`lg:hidden overflow-hidden ${
+            isDark
+              ? 'bg-[#020617]/95 backdrop-blur-sm border-t border-slate-800/50'
+              : 'bg-white/95 backdrop-blur-sm border-t border-slate-200/50'
+          } ${isMobileMenuOpen ? 'block' : 'hidden'}`}
         >
           <div className="px-4 pt-4 pb-6 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-3 text-white hover:text-blue-400 hover:bg-slate-800/50 rounded-lg transition-colors duration-300 text-lg"
+                className={`block w-full text-left px-4 py-3 rounded-lg transition-colors duration-300 text-lg ${
+                  isDark
+                    ? 'text-white hover:text-blue-400 hover:bg-slate-800/50'
+                    : 'text-slate-700 hover:text-blue-400 hover:bg-slate-100/50'
+                }`}
               >
                 {item.name}
               </button>

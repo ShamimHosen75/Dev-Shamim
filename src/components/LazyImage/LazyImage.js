@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const LazyImage = ({ src, alt, className = "", width, height, placeholder = "bg-slate-800" }) => {
   const [isLoaded, setIsLoaded] = useState(false);

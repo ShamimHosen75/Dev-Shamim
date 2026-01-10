@@ -324,7 +324,7 @@ export const projects = [
       "HTML 5",
       "CSS 3",
   ],
-    category: "Latest project",
+    category: "Web App",
     github: "https://github.com/ShamimHosen75/DocZen---Medical-Health-React-Web-Template",
     liveLink: "https://doczen-medical.vercel.app/",
   },

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpIcon } from '@heroicons/react/24/solid';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { useTheme } from '../../utilities/ThemeContext';
 
 const ScrollToTopButton = () => {

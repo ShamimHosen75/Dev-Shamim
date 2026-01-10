@@ -1,17 +1,17 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import { ThemeProvider } from './utilities/ThemeContext';
-import { Suspense, lazy } from 'react';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
+import { ThemeProvider } from './utilities/ThemeContext';
+
+// Modern Components with code splitting
+import ModernHero from "./components/HeroSection/ModernHero";
+import ModernNavbar from "./components/Navbar/ModernNavbar";
 
 // Loading fallback component
 const LoadingFallback = () => (
   <div className="w-full h-96 bg-gradient-to-b from-slate-800 to-slate-900 dark:from-slate-900 dark:to-slate-950 animate-pulse" />
 );
-
-// Modern Components with code splitting
-import ModernNavbar from "./components/Navbar/ModernNavbar";
-import ModernHero from "./components/HeroSection/ModernHero";
 const ModernAbout = lazy(() => import("./components/About/ModernAbout"));
 const ModernSkills = lazy(() => import("./components/Skills/ModernSkills"));
 const ModernExperience = lazy(() => import("./components/Experiences/ModernExperience"));

@@ -1,23 +1,22 @@
 export const Bio = {
   name: "Billal Hosen Shamim",
   roles: [
-    "7+ Years Experienced Developer",
-    "5 Years Prompt Engineer", 
     "Aspiring Software Engineer",
+    "Competitive Programmer",
     "MERN Stack Developer",
     "WordPress Expert",
   ],
   description:
-    "7+ Years Experienced Developer | 5 Years Prompt Engineer | Aspiring Software Engineer. I specialize in WordPress, MERN stack development, and AI-powered solutions. Passionate about building impactful software that makes a difference.",
+    "I'm an enthusiastic programmer working on web application development for more than 5 year. I'm passionate about coding to make people's daily life more easier and always eager to take on new challenges. With a passion for learning I'm dedicated to delivering high-quality results. My core skills are based on JavaScript, React JS, and WordPress I love to do most things.",
   tagline: "Building the future with code and AI",
   goals: "To become a skilled Software Engineer & build impactful AI-powered solutions that solve real-world problems.",
   resume:
-    "https://drive.google.com/file/d/1EaD_pbER4dmxTnsXJinh6L12vnHeyEM4/view?usp=drive_link",
+    "https://drive.google.com/file/d/1Tuaw6I_V2PlsGnzyhXeRG1y82r6RQiSu/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
   facebook: "https://www.facebook.com/billal.hosen.shamim96",
   github: "https://github.com/ShamimHosen75",
   twitter: "https://twitter.com/ShamimHosen75",
-  email: "shamimhosen75@gmail.com",
+  email: "billal.shamim75@gmail.com",
 };
 
 export const skills = [
@@ -178,26 +177,26 @@ export const skills = [
 ];
 
 export const experiences = [
-  // {
-  //   id: 0,
-  //   img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
-  //   role: "Web Developer - Full time",
-  //   company: "Radius ICT",
-  //   location: "Dhaka, Bangladesh",
-  //   date: "Present",
-  //   desc: "Working on as a lead developer Frontend and WordPress development of the using Elementor page builder, Divi, Wpbakery and WooCommerce projects.",
-  //   skills: [
-  //     "Wordpress",
-  //     "Elementor",
-  //     "WooCommerce",
-  //     "WPbakery",
-  //     "Divi",
-  //     "HTML 5",
-  //     "CSS 3",
-  //     "JavaScript",
-  //   ],
-  //   // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-  // },
+  {
+    id: 0,
+    img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
+    role: "Web Developer - Part time",
+    company: "Radius ICT",
+    location: "Dhaka, Bangladesh",
+    date: "Present",
+    desc: "Working on as a lead developer Frontend and WordPress development of the using Elementor page builder, Divi, Wpbakery and WooCommerce projects.",
+    skills: [
+      "Wordpress",
+      "Elementor",
+      "WooCommerce",
+      "WPbakery",
+      "Divi",
+      "HTML 5",
+      "CSS 3",
+      "JavaScript",
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+  },
   
   {
     id: 1,
@@ -264,8 +263,18 @@ export const experiences = [
 ];
 
 export const education = [
-  {
+    {
     id: 0,
+    img: "https://i.ibb.co/R6YWCpq/hpi.png",
+    school: "World University of Bangladesh",
+    Location: "Dhaka, Bangladesh",
+    date: "2026-2029",
+    grade: "In Progress",
+    desc: "Focused on the core pillars of computer science, including Data Structures, Algorithms, Object-Oriented Programming (OOP), and Database Management Systems. Actively involved in applying these academic principles to solve complex engineering problems in my personal and professional projects.",
+    degree: "B.Sc In Computer Science and Engineering(CSE)",
+  },
+  {
+    id: 1,
     img: "https://i.ibb.co/R6YWCpq/hpi.png",
     school: "Habiganj Polytechnic Institute",
     Location: "Habiganj, Bangladesh",
@@ -275,7 +284,7 @@ export const education = [
     degree: "Diploma In Engineering - Computer Science and Technology",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://i.ibb.co/f4YtKHy/high-school.jpg",
     school: "D.C.P High School",
     Location: "Chunarughat, Bangladesh",
@@ -299,77 +308,50 @@ export const projects = [
   //Project-1(Team-Project)
   {
     id: 0,
-    title: "Hospital Management System",
-    date: "Aug 2022 - Sep 2023",
+    title: "DocZen - Medical & Health React Template!",
+    date: "Nov 2025 - Dec 2025",
     description:
-      "SaveLife is a comprehensive Hospital Management System developed using React.js and Firebase. Designed to streamline hospital operations, it offers features like patient and doctor management, appointment scheduling, and billing. The system provides both an admin dashboard for hospital staff and a patient portal for individuals to manage their health information efficiently.",
+      "A next-generation healthcare platform template engineered for speed and scalability. Built on the bleeding edge with React 19 and Tailwind CSS 4, this 15-page architecture features seamless Framer Motion animations, appointment booking logic, and a fully responsive design system optimized for medical professionals.",
     image:
-      "https://i.ibb.co/Rpxn9wb/project-1.png",
+      "https://i.ibb.co.com/9kdfV0Gt/Project-1.png",
     tags: [
       "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
+      "TypeScript",
+      "Framer Motion animations",
+      "Vite 7",
       "JavaScript",
       "Tailwind CSS",
       "HTML 5",
       "CSS 3",
   ],
-    category: "Team project",
-    github: "https://github.com/arshadsa/save-life-hospital-management-client",
-    liveLink: "https://hospital-management-syst-79467.web.app/",
-    member: [
-      {
-        name: "Billal Hosen Shamim",
-        linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
-        github: "https://github.com/ShamimHosen75",
-      },
-      {
-        name: "Anik Hasan",
-        linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
-        github: "https://github.com/ShamimHosen75",
-      },
-      {
-        name: "Arshad",
-        linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
-        github: "https://github.com/arshadsa",
-      },
-      {
-        name: "Ovilash",
-        linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
-        github: "https://github.com/ShamimHosen75",
-      },
-      {
-        name: "Yeasin",
-        linkedin: "https://www.linkedin.com/in/billal-hosen-shamim/",
-        github: "https://github.com/ShamimHosen75",
-      },
-    ],
+    category: "Latest project",
+    github: "https://github.com/ShamimHosen75/DocZen---Medical-Health-React-Web-Template",
+    liveLink: "https://doczen-medical.vercel.app/",
   },
 
   //Project-2(Individual-Companies)
-  {
-    id: 1,
-    title: "Anonymous Feedback",
-    date: "Dec 2022 - Jan 2023",
-    description:
-      "Designed and developed the App Coderz project, a project anonymous feedback system web application. Implemented key features such as any employees give his/her feedback about anything, users login should be a provide company passcode, feedback reads only company's CEO & admin",
-    image:
-      "https://i.ibb.co/c3cxtGR/project-2.png",
-    tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "JavaScript",
-      "Tailwind CSS",
-      "HTML 5",
-      "CSS 3",
-    ],
-    category: "Web App",
-    github: "https://github.com/ShamimHosen75/Anonymous-Feedback-Client",
-    liveLink: "https://anonymous-feedback-288d2.web.app/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Anonymous Feedback",
+  //   date: "Dec 2022 - Jan 2023",
+  //   description:
+  //     "Designed and developed the App Coderz project, a project anonymous feedback system web application. Implemented key features such as any employees give his/her feedback about anything, users login should be a provide company passcode, feedback reads only company's CEO & admin",
+  //   image:
+  //     "https://i.ibb.co/c3cxtGR/project-2.png",
+  //   tags: [
+  //     "React Js",
+  //     "MongoDb",
+  //     "Node Js",
+  //     "Express Js",
+  //     "JavaScript",
+  //     "Tailwind CSS",
+  //     "HTML 5",
+  //     "CSS 3",
+  //   ],
+  //   category: "Web App",
+  //   github: "https://github.com/ShamimHosen75/Anonymous-Feedback-Client",
+  //   liveLink: "https://anonymous-feedback-288d2.web.app/",
+  // },
 
   //Project-3(Individual)
   {
@@ -445,21 +427,23 @@ export const projects = [
   //CMS Project-(Individual)
   {
     id: 5,
-    title: "Fodis Fast Food",
-    date: "Feb 2025 - Mar 2025",
+    title: "Next Gear Auto",
+    date: "Dec 2025 - Jan 2026",
     description:
       "A WordPress demo site showcasing a full-service restaurant experience: hero-driven landing page, category-based menu with item detail pages, online ordering and table-reservation flows, gallery and contact/locations. Designed as a conversion-first demo to demonstrate menu management, order/booking integrations, and a mobile-first UX suitable for small restaurants and cafes.",
     image:
-      "https://i.ibb.co.com/Jww6RmL5/Project-19.png",
+      "https://i.ibb.co.com/5WYnbpK7/Project-3.png",
     tags: [
       "WordPress",
-      "Elementor",
-      "Plugins",
-      "HTML 5",
-      "CSS 3",
+      "WooCommcerce",
+      "Booking Plugin",
+      "ACF Plugin",
+      "Payment gateway",
+      "PHP",
+      "CSS 3"
     ],
     category: "WordPress",
-    liveLink: "https://restaurant.quantovest.com/",
+    liveLink: "https://rentnextgearauto.com/",
   },
 
 
@@ -564,12 +548,12 @@ export const projects = [
   //CMS Project-5(Client)
   {
     id: 11,
-    title: "Pallima Sangsad",
-    date: "Sep 2024 - March 2025",
+    title: "SPS Law",
+    date: "Nov 2025 - Dec 2025",
     description:
-      "Developed a WordPress custom website using popular page builder(Elementor). This website is a IT technical support, which seeks to provide high-quality solutions to ensure the security and privacy of customer data. This website provides a wide range of technical support services, including network configuration, software and hardware solutions, cybersecurity, backup and data recovery etc.",
+      "This project involved a comprehensive brand refresh and digital presence update for SPS Law Group LLP, a Canadian law firm serving a diverse, multilingual community. The goal was to establish a visual identity that projects authority, trust, and accessibility while modernizing their digital footprint.",
     image:
-      "https://i.ibb.co.com/qLgzbWxP/Project-20.png",
+      "https://i.ibb.co.com/DPMXWjGw/Project-12.png",
     tags: [
       "WordPress",
       "Elementor",
@@ -578,7 +562,7 @@ export const projects = [
       "CSS 3"
     ],
     category: "WordPress",
-    liveLink: "https://pallimasangsad.org/",
+    liveLink: "https://spslaw.ca/",
   }, 
   
 ];

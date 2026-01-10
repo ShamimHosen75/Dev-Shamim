@@ -1,89 +1,187 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Bio } from '../../data/constants';
+import styles from './ModernHero.module.css';
 
-const GridBackground = () => {
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
-      <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)]">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="100%"
-          className="absolute inset-0"
+const GridBackground = () => (
+  <div className={styles.gridBackground}>
+    <div className={styles.gridOverlay}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="100%"
+        className={styles.gridSvg}
+      >
+        <pattern
+          id="grid"
+          width="40"
+          height="40"
+          patternUnits="userSpaceOnUse"
         >
-          <pattern
-            id="grid"
+          <rect
             width="40"
             height="40"
-            patternUnits="userSpaceOnUse"
-          >
-            <rect
-              width="40"
-              height="40"
-              fill="none"
-              stroke="white"
-              strokeWidth="0.5"
-              className="opacity-40"
-            />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
+            fill="none"
+            stroke="white"
+            strokeWidth="0.5"
+            className={styles.gridRect}
+          />
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
     </div>
-  );
-};
+  </div>
+);
+
+const codeDisplay = (
+  <div className="code-content">
+    <div className="code-line">
+      <span className={styles.keyword}>const</span>{' '}
+      profile{' '}
+      <span className={styles.operator}>=</span>{' '}
+      <span className={styles.punctuation}>{`{`}</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>name</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.string}>'Billal Hosen Shamim'</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>title</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.string}>'Aspiring Software Engineer | Frontend Developer | WordPress Expert '</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>skills</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.punctuation}>[</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'    '}</span>
+      <span className={styles.string}>'JavaScript'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'React JS'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'TypeScript'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'WordPress'</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'    '}</span>
+      <span className={styles.string}>'Node JS'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'MongoDB'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'Express JS'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'C/C++'</span>
+      <span className={styles.punctuation}>,</span>{' '}
+      <span className={styles.string}>'Go/Goland'</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.punctuation}>],</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>hardWorker</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.boolean}>true</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>quickLearner</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.boolean}>true</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>problemSolver</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.boolean}>true</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>yearsOfExperience</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.number}>5</span>
+      <span className={styles.punctuation}>,</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.property}>hireable</span>
+      <span className={styles.punctuation}>:</span>{' '}
+      <span className={styles.keyword}>function</span>
+      <span className={styles.punctuation}>()</span>{' '}
+      <span className={styles.punctuation}>{`{`}</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'    '}</span>
+      <span className={styles.keyword}>return</span>{' '}
+      <span className={styles.punctuation}>(</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'      '}</span>
+      <span className={styles.keyword}>this</span>
+      <span className={styles.punctuation}>.</span>
+      <span className={styles.property}>hardWorker</span>{' '}
+      <span className={styles.operator}>&&</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'      '}</span>
+      <span className={styles.keyword}>this</span>
+      <span className={styles.punctuation}>.</span>
+      <span className={styles.property}>problemSolver</span>{' '}
+      <span className={styles.operator}>&&</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'      '}</span>
+      <span className={styles.keyword}>this</span>
+      <span className={styles.punctuation}>.</span>
+      <span className={styles.property}>skills.length</span>{' '}
+      <span className={styles.operator}>{'>='}</span>{' '}
+      <span className={styles.number}>5</span>{' '}
+      <span className={styles.operator}>&&</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'      '}</span>
+      <span className={styles.keyword}>this</span>
+      <span className={styles.punctuation}>.</span>
+      <span className={styles.property}>yearsOfExperience</span>{' '}
+      <span className={styles.operator}>{'>='}</span>{' '}
+      <span className={styles.number}>2</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'    '}</span>
+      <span className={styles.punctuation}>);</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.indent}>{'  '}</span>
+      <span className={styles.punctuation}>{`}`}</span>
+    </div>
+    <div className="code-line">
+      <span className={styles.punctuation}>{`}`}</span>
+      <span className={styles.punctuation}>;</span>
+    </div>
+  </div>
+);
 
 const ModernHero = () => {
-  // Create syntax highlighted code as JSX
-  const codeDisplay = (
-    <div className="code-content">
-      <span className="token comment">{'// Developer Profile Algorithm'}</span>
-      <br />
-      <br />
-      <span className="token keyword">ALGORITHM</span> <span className="token function">DeveloperProfile</span>
-      <br />
-      <span className="token keyword">BEGIN</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token comment">{'// Initialize developer properties'}</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">SET</span> <span className="token variable">name</span> <span className="token operator">=</span> <span className="token string">"Billal Hosen Shamim"</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">SET</span> <span className="token variable">title</span> <span className="token operator">=</span> <span className="token string">"Aspiring Software Engineer"</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">SET</span> <span className="token variable">hardWorker</span> <span className="token operator">=</span> <span className="token boolean">TRUE</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">SET</span> <span className="token variable">quickLearner</span> <span className="token operator">=</span> <span className="token boolean">TRUE</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">SET</span> <span className="token variable">problemSolver</span> <span className="token operator">=</span> <span className="token boolean">TRUE</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">SET</span> <span className="token variable">yearsOfExperience</span> <span className="token operator">=</span> <span className="token number">5</span>
-      <br />
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token comment">{'// Check hiring eligibility'}</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">FUNCTION</span> <span className="token function">checkHireability</span><span className="token punctuation">()</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">IF</span> <span className="token punctuation">(</span><span className="token variable">hardWorker</span> <span className="token keyword">AND</span> <span className="token variable">problemSolver</span> <span className="token keyword">AND</span> <span className="token variable">yearsOfExperience</span> <span className="token operator">&gt;=</span> <span className="token number">3</span><span className="token punctuation">)</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">RETURN</span> <span className="token boolean">TRUE</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">ELSE</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">RETURN</span> <span className="token boolean">FALSE</span>
-      <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className="token keyword">END FUNCTION</span>
-      <br />
-      <span className="token keyword">END</span>
-    </div>
-  );
-
-  const words = [
+  const [words] = useState([
     "Aspiring Software Engineer",
     "MERN Stack Developer",
     "Competitive Programmer",
     "WordPress Expert",
-  ];
+  ]);
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
@@ -94,160 +192,12 @@ const ModernHero = () => {
     return () => clearInterval(interval);
   }, [words.length]);
 
-  useEffect(() => {
-    // Add custom CSS for animations
-    const style = document.createElement("style");
-    style.textContent = `
-      @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
-      }
-      
-      @keyframes float-slow {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-15px); }
-      }
-      
-      .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
-      
-      .animate-float-slow {
-        animation: float-slow 7s ease-in-out infinite;
-      }
-
-      .typing-effect::after {
-        content: "|";
-        animation: blink 1s step-end infinite;
-        margin-left: 2px;
-        color: #60a5fa;
-      }
-
-      @keyframes blink {
-        from, to { opacity: 1; }
-        50% { opacity: 0; }
-      }
-
-      .gradient-text {
-        background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .gradient-border {
-        background: linear-gradient(135deg, #60a5fa, #34d399, #f472b6);
-        border-radius: 16px;
-        padding: 2px;
-      }
-
-      .code-window {
-        background: #091121;
-        border-radius: 14px;
-        overflow: hidden;
-        font-family: 'Fira Code', 'Consolas', monospace;
-      }
-
-      .window-header {
-        background: #0f1419;
-        padding: 12px 16px;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #1e293b;
-      }
-
-      .window-dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin-right: 8px;
-      }
-
-      .code-display-container {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        padding: 1.5rem;
-        margin: 0;
-        background: #091121 !important;
-        color: #d4d4d4;
-        font-family: 'Fira Code', 'Consolas', monospace;
-        overflow-x: auto;
-      }
-
-      .code-content {
-        white-space: pre;
-        font-family: 'Fira Code', 'Consolas', monospace;
-      }
-
-      /* Token styling for syntax highlighting */
-      .token.keyword {
-        color: #569cd6 !important;
-        font-weight: bold;
-      }
-      
-      .token.string {
-        color: #ce9178 !important;
-      }
-      
-      .token.number {
-        color: #b5cea8 !important;
-      }
-      
-      .token.boolean {
-        color: #569cd6 !important;
-      }
-      
-      .token.function {
-        color: #dcdcaa !important;
-      }
-      
-      .token.property {
-        color: #9cdcfe !important;
-      }
-      
-      .token.variable {
-        color: #9cdcfe !important;
-      }
-      
-      .token.operator {
-        color: #d4d4d4 !important;
-      }
-      
-      .token.punctuation {
-        color: #d4d4d4 !important;
-      }
-      
-      .token.comment {
-        color: #6a9955 !important;
-        font-style: italic;
-      }
-    `;
-    document.head.appendChild(style);
-
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
-
   return (
     <main className="hero bg-[#020617] text-white min-h-screen relative overflow-hidden">
-      <style jsx>{`
-        .token.comment { color: #999 !important; font-style: italic; }
-        .token.string { color: #7ec699 !important; }
-        .token.keyword { color: #cc99cd !important; }
-        .token.function { color: #f08d49 !important; }
-        .token.number { color: #f08d49 !important; }
-        .token.boolean { color: #f08d49 !important; }
-        .token.property { color: #f8c555 !important; }
-        .token.punctuation { color: #ccc !important; }
-        .token.operator { color: #67cdcc !important; }
-        .token.variable { color: #ccc !important; }
-      `}</style>
       <section className="hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-0">
-        <div className="absolute inset-0"></div>
-
-        {/* Grid Background */}
-        <GridBackground />
+        <div className="absolute inset-0">
+          <GridBackground />
+        </div>
 
         {/* Floating dots animation */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -409,8 +359,7 @@ const ModernHero = () => {
             {/* Floating badges */}
             <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
               <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
-                <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI
-                Magic
+                <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI Magic
               </div>
             </div>
             <div className="hidden lg:block absolute right-10 top-20 animate-float">
@@ -432,34 +381,43 @@ const ModernHero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <div className="gradient-border">
-              <div className="code-window bg-[#091121]">
-                <div className="window-header">
-                  <div className="window-dot bg-red-500"></div>
-                  <div className="window-dot bg-yellow-500"></div>
-                  <div className="window-dot bg-green-500"></div>
-                  <span className="ml-2 text-sm text-gray-400 flex items-center gap-2">
-                    <i className="fas fa-code"></i>
-                    algorithm.pseudo
+            <div className="w-full p-[1px] rounded-lg bg-gradient-to-r from-cyan-500 via-blue-500 to-pink-500">
+              <div className="w-full h-full rounded-lg bg-[#01080f] overflow-hidden">
+              {/* Window header */}
+              <div className="px-4 py-3 bg-[#011627] border-b border-[#1E2D3D] flex items-center">
+                <div className="flex gap-2 items-center">
+                  <div className="w-3 h-3 rounded-full bg-[#FF5F56] border-[0.5px] border-[#E0443E]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#FFBD2E] border-[0.5px] border-[#DEA123]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#27C93F] border-[0.5px] border-[#1AAB29]"></div>
+                </div>
+                <div className="ml-4 flex items-center gap-2">
+                  <span className="text-[15px] font-semibold text-gray-400">
+                    profile.js
                   </span>
                 </div>
-                <div className="code-display-container">
-                  {codeDisplay}
-                </div>
+              </div>
+              {/* Code content */}
+              <div className="bg-[#031321] p-6">
+                <pre className="text-[15px] leading-[1.6] font-mono">
+                  <code className="text-gray-200">
+                    {codeDisplay}
+                  </code>
+                </pre>
+              </div>
               </div>
             </div>
           </motion.div>
         </div>
-      </section>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
-        <span className="text-gray-400 text-sm flex items-center gap-2">
-          <i className="fas fa-mouse text-blue-400"></i>
-          About me
-        </span>
-        <i className="fas fa-chevron-down text-blue-400 text-xl"></i>
-      </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
+          <span className="text-gray-400 text-sm flex items-center gap-2">
+            <i className="fas fa-mouse text-blue-400"></i>
+            About me
+          </span>
+          <i className="fas fa-chevron-down text-blue-400 text-xl"></i>
+        </div>
+      </section>
     </main>
   );
 };

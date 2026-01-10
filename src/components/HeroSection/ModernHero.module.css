@@ -1,0 +1,262 @@
+.gridBackground {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+ overflow: hidden;
+ opacity: 0.2;
+}
+
+.gridOverlay {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ mask-image: radial-gradient(ellipse at center, transparent 0%, black);
+}
+
+.gridSvg {
+ width: 100%;
+ height: 100%;
+}
+
+.gridRect {
+ opacity: 0.4;
+}
+
+.content {
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 2rem;
+ position: relative;
+ z-index: 1;
+}
+
+.mainContent {
+ width: 100%;
+ padding: 4rem 0;
+}
+
+.welcomeBadge {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.5rem;
+ padding: 0.5rem 1rem;
+ background: rgba(31, 41, 55, 0.5);
+ backdrop-filter: blur(4px);
+ border: 1px solid rgba(75, 85, 99, 0.5);
+ border-radius: 9999px;
+ margin-bottom: 1.5rem;
+}
+
+.pulsingDot {
+ width: 0.5rem;
+ height: 0.5rem;
+ border-radius: 50%;
+ background: rgb(96, 165, 250);
+ animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.titleContainer {
+ position: relative;
+ margin-bottom: 1.5rem;
+}
+
+.title {
+ font-size: 4rem;
+ font-weight: bold;
+ line-height: 1.2;
+ color: white;
+}
+
+.nameGradient {
+ background: linear-gradient(135deg, #1e90ff 0%, #00ffff 100%);
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ animation: typing 0.5s steps(40) alternate infinite;
+}
+
+.titleBlur {
+ position: absolute;
+ top: 50%;
+ left: 25%;
+ width: 8rem;
+ height: 8rem;
+ background: rgba(96, 165, 250, 0.2);
+ border-radius: 50%;
+ filter: blur(32px);
+ animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+ transform: translateY(-50%);
+}
+
+.roleBadge {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.75rem;
+ padding: 0.75rem 1.5rem;
+ background: linear-gradient(
+  135deg,
+  rgba(30, 144, 255, 0.1),
+  rgba(0, 255, 255, 0.1)
+ );
+ border: 1px solid rgba(30, 144, 255, 0.2);
+ border-radius: 1rem;
+ margin-bottom: 1.5rem;
+ backdrop-filter: blur(4px);
+}
+
+.roleBadge i {
+ color: rgb(96, 165, 250);
+}
+
+.roleBadge span {
+ font-size: 1.25rem;
+ font-weight: 500;
+ color: rgb(96, 165, 250);
+}
+
+.codeWrapper {
+ width: 100%;
+ margin-top: 2rem;
+ background: rgba(17, 24, 39, 0.7);
+ border-radius: 1rem;
+ overflow: hidden;
+}
+
+.codeBlock {
+ background: #1a1b26;
+ color: #a9b1d6;
+ padding: 1.5rem;
+ margin: 0;
+ overflow-x: auto;
+ font-size: 0.95rem;
+ line-height: 1.6;
+ font-family: "Fira Code", monospace;
+ white-space: pre;
+}
+
+.codeBlock code {
+ display: block;
+}
+
+.keyword {
+ color: #ff79c6;
+ font-weight: bold;
+}
+
+.string {
+ color: #7ec699;
+}
+
+.number {
+ color: #f08d49;
+}
+
+.boolean {
+ color: #f08d49;
+}
+
+.property {
+ color: #f8c555;
+}
+
+.punctuation {
+ color: #ccc;
+}
+
+.operator {
+ color: #67cdcc;
+}
+
+.comment {
+ color: #999;
+ font-style: italic;
+}
+
+.floatingDot {
+ position: absolute;
+ width: 0.5rem;
+ height: 0.5rem;
+ background: rgba(96, 165, 250, 0.2);
+ border-radius: 50%;
+ animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+ 0%,
+ 100% {
+  opacity: 1;
+ }
+ 50% {
+  opacity: 0.5;
+ }
+}
+
+@keyframes float {
+ 0%,
+ 100% {
+  transform: translateY(0);
+ }
+ 50% {
+  transform: translateY(-20px);
+ }
+}
+
+@keyframes typing {
+ from {
+  clip-path: inset(0 100% 0 0);
+ }
+ to {
+  clip-path: inset(0 0 0 0);
+ }
+}
+
+@media (min-width: 640px) {
+ .welcomeBadge {
+  padding: 0.75rem 1.5rem;
+ }
+
+ .title {
+  font-size: 5rem;
+ }
+}
+
+@media (min-width: 1024px) {
+ .mainContent {
+  width: 50%;
+ }
+
+ .title {
+  font-size: 7rem;
+ }
+}
+
+.keyword {
+ color: #ff79c6;
+}
+
+.operator {
+ color: #ff79c6;
+}
+
+.string {
+ color: #a5d6ff;
+}
+
+.number {
+ color: #79c0ff;
+}
+
+.boolean {
+ color: #ff79c6;
+}
+
+.property {
+ color: #79c0ff;
+}
+
+.punctuation {
+ color: #e6edf3;
+}

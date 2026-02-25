@@ -180,26 +180,51 @@ export const experiences = [
   {
     id: 0,
     img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
-    role: "Web Developer - Part time",
-    company: "Radius ICT",
+    role: "Web Developer - Full time",
+    company: "Ashma Tech Limited",
     location: "Dhaka, Bangladesh",
     date: "Present",
-    desc: "Working on as a lead developer Frontend and WordPress development of the using Elementor page builder, Divi, Wpbakery and WooCommerce projects.",
+    desc: "Leading full-stack web development using React JS, Next JS, and Node JS for scalable web applications. Building and managing backend services with Supabase and Firebase. Developing and maintaining WordPress and WooCommerce-based e-commerce stores using Woodmart and Elementor. Leveraging AI-assisted vibe coding to accelerate development workflows and deliver high-quality solutions.",
     skills: [
+      "React JS",
+      "Next JS",
+      "Node JS",
+      "Supabase",
+      "Firebase",
+      "JavaScript",
+      "WordPress",
+      "Elementor",
+      "WooCommerce",
+      "Woodmart",
+      "Vibe Coding",
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+  },
+  {
+    id: 1,
+    img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
+    role: "Web Developer - Full time",
+    company: "Radius ICT",
+    location: "Dhaka, Bangladesh",
+    date: "Jan 2025 - Jan 2026",
+    desc: "Developed and maintained full-stack web applications using React JS, Next JS, and Node JS with Supabase and Firebase for backend services. Built and customized WordPress and WooCommerce e-commerce stores using Woodmart and Elementor, delivering responsive and high-performance websites for diverse clients.",
+    skills: [
+      "React JS",
+      "Next JS",
+      "Node JS",
+      "Supabase",
+      "Firebase",
       "Wordpress",
       "Elementor",
       "WooCommerce",
-      "WPbakery",
-      "Divi",
-      "HTML 5",
-      "CSS 3",
+      "Woodmart",
       "JavaScript",
     ],
     // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   },
   
   {
-    id: 1,
+    id: 2,
     // img: "https://i.ibb.co.com/FHJYTrf/ethicalden.png",
     role: "Lead Web Developer - Full time",
     company: "Ethical Den",
@@ -220,7 +245,7 @@ export const experiences = [
   },
 
   {
-    id: 2,
+    id: 3,
     // img: "https://i.ibb.co/8bm4crr/bd-Calling.jpg",
     role: "Web Developer - Full time",
     company: "bdCalling IT LTD",
@@ -240,7 +265,7 @@ export const experiences = [
   }, 
 
   {
-    id: 3,
+    id: 4,
     // img: "https://i.ibb.co/0m62FMV/1.png",
     role: "Frontend Engineer - Intern",
     company: "App Coderz, USA",
@@ -305,9 +330,57 @@ export const education = [
 ];
 
 export const projects = [
-  //Project-1(Team-Project)
-  {
+    //Project-1(Vibe-Coding Project)
+    {
     id: 0,
+    title: "DeenHub - Islamic App",
+    date: "Sep 2025 - Feb 2026",
+    description:
+      "A comprehensive Islamic digital platform combining Quran reading/listening with mosque management tools. Features include all 114 surahs with audio from renowned reciters, prayer times, tasbeeh counter, prayer tracker, Hijri calendar, Zakat calculator, and Hajj/Umrah guides. The dashboard side offers full mosque administration — member management, donation tracking, expense monitoring, imam/staff payroll, and automated notifications. Supports Bengali & English localization, dark/light themes, and role-based access control.",
+    image:
+      "https://i.ibb.co.com/mrpQV6Y7/Project15.png",
+    tags: [
+      "React Js",
+      "TypeScript",
+      "Framer Motion animations",
+      "Vite ",
+      "JavaScript",
+      "Tailwind CSS",
+      "Supabase",
+      "HTML 5",
+      "CSS 3",
+  ],
+    category: "Web App",
+    github: "#",
+    liveLink: "https://realstateashma.lovable.app/",
+  },
+  {
+    id: 1,
+    title: "DeenHub - Islamic App",
+    date: "Sep 2025 - Feb 2026",
+    description:
+      "A comprehensive Islamic digital platform combining Quran reading/listening with mosque management tools. Features include all 114 surahs with audio from renowned reciters, prayer times, tasbeeh counter, prayer tracker, Hijri calendar, Zakat calculator, and Hajj/Umrah guides. The dashboard side offers full mosque administration — member management, donation tracking, expense monitoring, imam/staff payroll, and automated notifications. Supports Bengali & English localization, dark/light themes, and role-based access control.",
+    image:
+      "https://i.ibb.co.com/ymvds1NK/Project13.png",
+    tags: [
+      "React Js",
+      "TypeScript",
+      "Framer Motion animations",
+      "Vite ",
+      "JavaScript",
+      "Tailwind CSS",
+      "Supabase",
+      "HTML 5",
+      "CSS 3",
+  ],
+    category: "Vibe Coding",
+    github: "https://github.com/ShamimHosen75/masjid-manage-pro",
+    liveLink: "https://deenhub.online/",
+  },
+  //Project-1(Team-Project)
+
+  {
+    id: 2,
     title: "DocZen - Medical & Health React Template!",
     date: "Nov 2025 - Dec 2025",
     description:
@@ -355,31 +428,32 @@ export const projects = [
 
   //Project-3(Individual)
   {
-    id: 2,
-    title: "iTimeco-watch",
-    date: "April 2022 - May 2022",
+    id: 3,
+    title: "Sawlin's Lifestyle",
+    date: "Jan 2026 - Feb 2026",
     description:
-      "iTimeco — SmartBand is a Firebase-hosted single-page product app (itimeco-watch.web.app) presenting a SmartBand/wearable product. It’s built as a JS SPA (client-side rendering) and — based on common SmartBand patterns and related iTime companion apps — focuses on product specs (health tracking), gallery/demos, companion app pairing, and a purchase/checkout flow.",
+      "Sawlin's Lifestyle is a modern, full-featured e-commerce platform for fashion and lifestyle products. Built with React, TypeScript, and Supabase, it features a dynamic product catalog with category filtering, real-time inventory management, secure checkout flow, user authentication, an admin dashboard for store management, and a responsive design with smooth Framer Motion animations for a premium shopping experience.",
     image:
-      "https://i.ibb.co/7pBYgLB/project-4.png",
+      "https://i.ibb.co.com/WNnwkSL6/Project14.png",
     tags: [
       "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
+      "TypeScript",
+      "Framer Motion animations",
+      "Vite ",
       "JavaScript",
       "Tailwind CSS",
+      "Supabase",
       "HTML 5",
       "CSS 3",
     ],
     category: "Web App",
-    github: "https://github.com/ShamimHosen75/iTimeco-watch-management-client",
-    liveLink: "https://itimeco-watch.web.app/",
+    github: "https://github.com/ShamimHosen75/Sawlin-s-Lifestyle-Ecommerce",
+    liveLink: "https://sawlins-lifestyle.vercel.app/",
   },
 
   //Project-4(Individual)
   {
-    id: 3,
+    id: 4,
     title: "Smart Ranna - Cook Smarter with AI",
     date: "Aug 2025 - Aug 2025",
     description:
@@ -403,7 +477,7 @@ export const projects = [
 
   //Project-5(Individual)
   {
-    id: 4,
+    id: 5,
     title: "Sam-Fitness",
     date: "April 2022 - May 2022",
     description:

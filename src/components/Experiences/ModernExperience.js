@@ -21,10 +21,10 @@ const ModernExperience = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Work Experience
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-lg max-w-2xl mx-auto">
             My professional journey through various companies and roles
           </p>
         </motion.div>
@@ -52,11 +52,11 @@ const ModernExperience = () => {
 
                 {/* Experience Card */}
                 <div className="ml-6 md:ml-8 flex-1">
-                  <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 md:p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
+                  <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-4 sm:p-6 md:p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
                     {/* Header */}
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                       <div className="flex-1">
-                        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
                           {experience.role}
                         </h3>
                         <div className="flex items-center space-x-2 mb-2">
@@ -81,7 +81,7 @@ const ModernExperience = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-slate-300 leading-relaxed mb-6">
+                    <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
                       {experience.desc}
                     </p>
 
@@ -114,21 +114,21 @@ const ModernExperience = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8">
-            <div className="flex items-center justify-center space-x-8">
+          <div className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-5 sm:p-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-8">
               <div className="text-center">
-                <div className="text-5xl font-bold text-blue-400 mb-2">3+</div>
-                <div className="text-slate-400 text-sm">Years Experience</div>
+                <div className="text-3xl sm:text-5xl font-bold text-blue-400 mb-1 sm:mb-2">3+</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Years Experience</div>
               </div>
-              <div className="w-px h-12 bg-slate-600"></div>
+              <div className="hidden sm:block w-px h-12 bg-slate-600"></div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-purple-400 mb-2">30+</div>
-                <div className="text-slate-400 text-sm">Company's Projects Completed</div>
+                <div className="text-3xl sm:text-5xl font-bold text-purple-400 mb-1 sm:mb-2">30+</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Company's Projects</div>
               </div>
-              <div className="w-px h-12 bg-slate-600"></div>
+              <div className="hidden sm:block w-px h-12 bg-slate-600"></div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-green-400 mb-2">75+</div>
-                <div className="text-slate-400 text-sm">Freelance Projects Completed</div>
+                <div className="text-3xl sm:text-5xl font-bold text-green-400 mb-1 sm:mb-2">75+</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Freelance Projects</div>
               </div>
             </div>
           </div>

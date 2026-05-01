@@ -47,14 +47,14 @@ const ModernFooter = () => {
             <div className="flex items-center space-x-3">
               <div className="flex items-center space-x-2">
                 <SiSongoda className="text-3xl text-blue-400" />
-                <span className="text-2xl font-bold text-white">
+                <span className="text-2xl font-bold bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] bg-clip-text text-transparent">
                   Dev | Shamim
                 </span>
               </div>
             </div>
 
             {/* Navigation Links */}
-            <nav className="flex flex-wrap items-center justify-center space-x-8">
+            <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-x-8">
               {navItems.map((item, index) => (
                 <button
                   key={index}

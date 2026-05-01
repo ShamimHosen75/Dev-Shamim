@@ -1,8 +1,8 @@
 import {
-  EnvelopeIcon,
-  MapPinIcon,
-  PaperAirplaneIcon,
-  PhoneIcon
+    EnvelopeIcon,
+    MapPinIcon,
+    PaperAirplaneIcon,
+    PhoneIcon
 } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -113,12 +113,12 @@ const ModernContact = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Get In Touch
           </h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-400 text-sm sm:text-lg max-w-3xl mx-auto leading-relaxed">
             Ready to start your next project? I'm available for freelance work and exciting opportunities.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-16">
           {/* Contact Form */}
           <motion.div
             variants={optimizedVariants.slideInLeft}

@@ -24,7 +24,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="bg-slate-900 dark:bg-slate-950 min-h-screen transition-colors duration-300">
+        <div className="bg-slate-900 dark:bg-slate-950 min-h-screen transition-colors duration-300 overflow-x-hidden">
           <ModernNavbar />
           
           <main>

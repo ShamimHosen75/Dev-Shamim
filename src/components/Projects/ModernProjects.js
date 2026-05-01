@@ -51,7 +51,7 @@ const ModernProjects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex justify-center gap-2 sm:gap-4 mb-12"
         >
           {categories.map((category) => (
             <button
@@ -60,7 +60,7 @@ const ModernProjects = () => {
                 setFilter(category);
                 setShowAll(false); // Reset showAll when filter changes
               }}
-              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 capitalize ${
+              className={`px-3 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 capitalize ${
                 filter === category
                   ? 'bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] text-white shadow-lg shadow-[#1E90FF]/25'
                   : 'bg-slate-700 text-slate-300 hover:bg-slate-600 hover:text-white'
@@ -229,14 +229,14 @@ const ModernProjects = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-16 max-w-8xl mx-auto">
-            <h3 className="text-4xl font-bold text-white mb-4">
+          <div className="bg-gradient-to-r from-slate-900 to-slate-800 border border-slate-700 rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-16 max-w-8xl mx-auto">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
               Have a Project in Mind?
             </h3>
-            <p className="text-slate-400 mb-6">
+            <p className="text-slate-400 text-sm sm:text-base mb-5 sm:mb-6">
               Let's collaborate and bring your ideas to life with modern technology and creative solutions.
             </p>
-            <button className="px-8 py-4 bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] text-white font-semibold rounded-lg hover:from-[#1874CD] hover:to-[#00E6E6] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#1E90FF]/25">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] text-white font-semibold rounded-lg hover:from-[#1874CD] hover:to-[#00E6E6] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#1E90FF]/25">
               Get In Touch
             </button>
           </div>

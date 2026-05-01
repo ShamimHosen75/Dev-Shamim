@@ -49,7 +49,7 @@ const ModernSkills = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             My Skills
           </h2>
-          <p className="text-slate-300 text-md max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-300 text-sm sm:text-md max-w-xl mx-auto leading-relaxed">
             Passionate front-end developer specializing in React, Tailwind CSS, and JavaScript to build clean, interactive web apps.
           </p>
         </motion.div>
@@ -116,7 +116,7 @@ const ModernSkills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8"
         >
           {skills.map((category, categoryIndex) => (
             <motion.div
@@ -129,9 +129,9 @@ const ModernSkills = () => {
               className="group relative"
             >
               {/* Category Card */}
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 h-full hover:border-slate-600 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-blue-500/10">
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-4 sm:p-6 h-full hover:border-slate-600 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-blue-500/10">
                 {/* Category Header */}
-                <div className="flex items-center space-x-3 mb-6">
+                <div className="flex items-center space-x-3 mb-4 sm:mb-6">
                   <div className={`w-12 h-12 bg-gradient-to-r ${getCategoryColor(category.title)} rounded-xl flex items-center justify-center text-white`}>
                     {category.title === 'Frontend Development' ? (
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -159,13 +159,13 @@ const ModernSkills = () => {
                       </svg>
                     )}
                   </div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">
                     {category.title}
                   </h3>
                 </div>
 
                 {/* Skills Grid */}
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
                       key={skillIndex}
@@ -179,7 +179,7 @@ const ModernSkills = () => {
                       }}
                       className="group/skill relative"
                     >
-                      <div className="bg-transparent border border-purple-500/30 rounded-lg p-6 text-center hover:border-purple-500/60 hover:bg-purple-500/5 transition-all duration-300 group-hover/skill:shadow-lg group-hover/skill:shadow-purple-500/20 h-32 flex flex-col justify-center items-center">
+                      <div className="bg-transparent border border-purple-500/30 rounded-lg p-3 sm:p-6 text-center hover:border-purple-500/60 hover:bg-purple-500/5 transition-all duration-300 group-hover/skill:shadow-lg group-hover/skill:shadow-purple-500/20 h-24 sm:h-32 flex flex-col justify-center items-center">
                         {/* Skill Icon */}
                         <div className="relative flex-shrink-0 mb-3">
                           <div className="w-10 h-10 mx-auto flex items-center justify-center">

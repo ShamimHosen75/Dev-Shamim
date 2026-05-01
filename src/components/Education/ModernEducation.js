@@ -45,12 +45,12 @@ const ModernEducation = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             My Academic Journey
           </h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-400 text-sm sm:text-lg max-w-3xl mx-auto leading-relaxed">
             My academic background and continuous learning journey in technology and software development.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
           {/* Education Cards */}
           <div className="space-y-6">
             <motion.h3
@@ -71,20 +71,20 @@ const ModernEducation = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-50px" }}
-                className="bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 group"
+                className="bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-4 sm:p-6 hover:border-blue-500/50 transition-all duration-300 group"
               >
                 {/* Degree and School */}
                 <div className="mb-4">
-                  <h4 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300 mb-1">
+                  <h4 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300 mb-1">
                     {edu.degree}
                   </h4>
-                  <p className="text-blue-400 font-medium text-lg">
+                  <p className="text-blue-400 font-medium text-base sm:text-lg">
                     {edu.school}
                   </p>
                 </div>
 
                 {/* Year, Location, CGPA - Styled Badges */}
-                <div className="flex flex-wrap items-center gap-4 mb-4">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-4">
                   {/* Year Badge */}
                   <div className="flex items-center space-x-1 bg-slate-700/50 border border-slate-600 rounded-lg px-3 py-2">
                     <CalendarIcon className="w-4 h-4 text-slate-400" />
@@ -167,7 +167,7 @@ const ModernEducation = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-blue-500/50 transition-colors duration-300 group"
+                  className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-4 sm:p-6 hover:border-blue-500/50 transition-colors duration-300 group"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -175,8 +175,8 @@ const ModernEducation = () => {
                     </div>
                     
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="text-lg font-bold text-white group-hover:text-purple-300 transition-colors duration-300">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+                        <h4 className="text-base sm:text-lg font-bold text-white group-hover:text-purple-300 transition-colors duration-300">
                           {cert.title}
                         </h4>
                         <span className="px-2 py-1 bg-blue-500/20 border border-blue-500/30 rounded-lg text-xs text-blue-300">
@@ -184,8 +184,8 @@ const ModernEducation = () => {
                         </span>
                       </div>
                       
-                      <p className="text-blue-300 text-lg mb-3">{cert.issuer}</p>
-                      <p className="text-slate-300 text-sm leading-relaxed">
+                      <p className="text-blue-300 text-base sm:text-lg mb-2 sm:mb-3">{cert.issuer}</p>
+                      <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
                         {cert.description}
                       </p>
                     </div>
@@ -200,7 +200,7 @@ const ModernEducation = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-8 text-center"
+              className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-5 sm:p-8 text-center"
             >
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
                 <AcademicCapIcon className="w-8 h-8 text-white" />

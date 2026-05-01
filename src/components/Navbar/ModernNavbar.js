@@ -62,10 +62,10 @@ const ModernNavbar = () => {
             >
               <button
                 onClick={() => scrollToSection('#home')}
-                className="flex items-center space-x-2 text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] bg-clip-text text-transparent hover:from-[#1874CD] hover:to-[#00E6E6] transition-all duration-300"
+                className="flex items-center space-x-2 text-2xl md:text-3xl font-bold transition-all duration-300"
               >
                 <SiSongoda className="text-blue-400 text-2xl md:text-3xl" />
-                <span>Dev | Shamim</span>
+                <span className="bg-gradient-to-r from-[#1E90FF] to-[#00FFFF] bg-clip-text text-transparent hover:from-[#1874CD] hover:to-[#00E6E6]">Dev | Shamim</span>
               </button>
             </motion.div>
 

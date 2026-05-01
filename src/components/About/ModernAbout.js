@@ -58,7 +58,7 @@ const ModernAbout = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">About Me</h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <motion.div
             variants={optimizedVariants.slideInLeft}
@@ -131,7 +131,7 @@ const ModernAbout = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-row gap-3 sm:gap-4"
             >
               <button
                 onClick={() => scrollToSection('contact')}
